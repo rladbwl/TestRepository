@@ -1,20 +1,18 @@
 #include <iostream>
 
-//void DeletePointer(void** pointer)
-void DeletePointer(void*& pointer)
-
+void DeletePointer(void*& ptr)
 {
-	if (pointer != nullptr)
+	if (ptr != nullptr)
 	{
-		delete pointer;
-		pointer = nullptr;
+		delete ptr;
+		ptr = nullptr;
 	}
 }
 
 int main()
 {
-
-
+	// 동적 할당.
+	char* buffer = new char[10];
 
 	// 포인터는 주소를 저장하는 변수.
 	//void* pointer = nullptr;
